@@ -9,14 +9,15 @@
     <properties>
       <!--  Config Hibernate -->
       <!-- jdbc:postgresql://localhost:5432/ifpa   -->
-      <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/ifpa?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory"/>
+      <property name="hibernate.connection.url" value="ec2-3-211-176-230.compute-1.amazonaws.com:5432/d5men421rgr7q4"/>
       <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
       <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect"/>
-      <property name="hibernate.connection.username" value="postgres"/>
-      <property name="hibernate.connection.password" value="admin"/>
+      <property name="hibernate.connection.username" value="rfrqfkbpspmjvu"/>
+      <property name="hibernate.connection.password" value="bf13bcade653e2aad340928e8290d712ba822ee5a5663667db44606c2bc2a9c3"/>
       <!-- 
 	    		<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
 	    	 	-->
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
     </properties>
   </persistence-unit>
 </persistence>
